@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './common/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +18,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    // mat modules
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
